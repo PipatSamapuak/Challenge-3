@@ -46,9 +46,10 @@ None
 # Review
 
 The URL of the deployed application.
+https://pipatsamapuak.github.io/Challenge-3-Generate-Password-Pipat/
 
 The URL of the GitHub repository, with a unique name and a README that describes the project.
-
+https://github.com/PipatSamapuak/Challenge-3-Generate-Password-Pipat
 
 # Example pictures of website
 
