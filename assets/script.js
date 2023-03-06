@@ -10,11 +10,13 @@ var generateBtn = document.querySelector("#generate");
     var password = generatePassword();
   }
 
+// Set variable for each cases: Upper/Lower case, number and Symbol
   var upperCase = "ABCDEFGHIJKLMNO";
   var lowerCase = upperCase.toLowerCase(); 
   var number = "0123456789";
   var symbol = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"; 
-
+  
+// Create function to generate password 
   function generatePassword() { 
     var minlength = 8; 
     var maxlength = 128; 
@@ -25,8 +27,10 @@ var generateBtn = document.querySelector("#generate");
     var includeSymbol = window.confirm('Do you want to include symbol?');  
     var userLength = window.prompt('Do you wish to create password with min length of 8 and not over 128?');
     
+// Change userInput into Integer data type 
     var userLengthnum = parseInt(userLength); 
 
+// Create variable with empty string and if else condition from user's input
     var availableCharacter = ""; 
 
     if (includeUpper) {
@@ -38,10 +42,10 @@ var generateBtn = document.querySelector("#generate");
     if(includeNumber) {
       availableCharacter+=number;
     }
-
     if(includeSymbol) {
       availableCharacter+=symbol;
     }
+// Crete variable for final password and loop 
     var finalPassword = ""; 
 
     for (i = 1; i <= userLengthnum; i++) {
@@ -49,36 +53,7 @@ var generateBtn = document.querySelector("#generate");
       finalPassword+=availableCharacter[randomNum]; 
       console.log(finalPassword);
     }
-    // return PW 
-    // if user answers "No" all the way, should have an option for randomly generate password
-  }
-    
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// Validate the generated password 
-
- // var userLength = window.prompt("Do you wish to create password with min 8 characters and not over 128 characters?");
-
-    // if (userLength != null) { 
-    // } else (window.prompt('Do you wish to add character in your password?'));
-    // if (userLength != null) {
-    
-    // } 
-  // } 
-
-  //function validatePassword() {
-    // var newPassword = document.getElementById('changePasswordForm').newPassword.value;
-    // var minNumberofChars = 6;
-    //  var maxNumberofChars = 16;
-    // var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,128}$/;
-    // alert(newPassword); 
-    // if(newPassword.length < minNumberofChars || newPassword.length > maxNumberofChars){
-       // return false;
-    // }
-    // if(!regularExpression.test(newPassword)) {
-       // alert("password should contain atleast one number and one special character");
-        //return false;
-   // }
-// }
