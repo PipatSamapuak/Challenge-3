@@ -25,15 +25,16 @@ var generateBtn = document.querySelector("#generate");
     var includeLower = window.confirm('Do you want to include lower character?'); 
     var includeNumber = window.confirm('Do you want to include number?');
     var includeSymbol = window.confirm('Do you want to include symbol?');  
-    var userLength = window.prompt('Do you wish to create password with min length of 8 and not over 128?');
-    
+    var userLength = window.prompt('Do you wish to create password with min length of 8 and not over 128?'); 
+  }
+
 // Change userInput into Integer data type 
     var userLengthnum = parseInt(userLength); 
 
 // Create variable with empty string and if else condition from user's input
     var availableCharacter = ""; 
 
-    if (includeUpper) {
+    if(includeUpper) {
       availableCharacter+=upperCase; 
     }
     if(includeLower) {
