@@ -38,3 +38,21 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 
 THEN the password is either displayed in an alert or written to the page
+
+# Grading Requirement 
+
+None
+
+# Review
+
+The URL of the deployed application.
+
+The URL of the GitHub repository, with a unique name and a README that describes the project.
+
+
+# Example pictures of website
+
+
+# License
+
+Please review the license in repo
