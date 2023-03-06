@@ -1,4 +1,4 @@
-# Challenge-3
+# Challenge-3 
 Generate password assignment 
 
 # User Story 
@@ -52,6 +52,8 @@ The URL of the GitHub repository, with a unique name and a README that describes
 https://github.com/PipatSamapuak/Challenge-3-Generate-Password-Pipat
 
 # Example pictures of website
+
+<img width="1173" alt="Screenshot 2566-03-06 at 16 30 20" src="https://user-images.githubusercontent.com/107624639/223035446-70c0bc4f-ed38-43d8-9ac6-ee56a9d72dca.png">
 
 
 # License
